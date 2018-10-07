@@ -16,6 +16,7 @@
 			grid-gap: 10px;
 			max-width: 960px;
 			margin: 0 auto;
+			transition: 0.5s linear;
 		}
 		#content div{
 			background: #333;
@@ -41,13 +42,14 @@
             grid-column: 1 / 5;
             grid-row: 5 / 7;
         }
-        #content{
-            //transform: rotateZ(45deg) scale(0.7);
+        input:checked + #content{
+            transform: rotateZ(45deg) scale(0.7);
         }
 	</style>
 </head>
 <body>
 
+	<input type="checkbox">
 	<div id="content">
 
 		<div class="one">1</div>
